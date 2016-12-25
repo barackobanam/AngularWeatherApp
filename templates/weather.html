@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <!--<h3 class="panel-title">{{convertTodate(w.dt) | date: 'MMMM d, y'}}</h3>-->
+                <h3 class="panel-title">{{convertDateFunction({adate : weatherObj.dt}) | date: formatDate}}</h3>
+            </div>
+            <div class="panel-body">
+                Nhiệt Độ: {{weatherObj.temp.day}}*C
+            </div>
+        </div>
+    </div>
+</div>
